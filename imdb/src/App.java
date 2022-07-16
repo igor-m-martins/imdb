@@ -5,7 +5,7 @@ import java.net.http.HttpResponse;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        var token_access = System.getenv(“$TMP”);
+        var token_access = "API_TOKEN";
         var url = String.format("https://imdb-api.com/en/API/Title/%s/tt1832382",token_access);
         URI uri = URI.create(url);
         var client = HttpClient.newHttpClient();
